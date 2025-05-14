@@ -2,37 +2,192 @@
 :toc:
 :toclevels: 3
 
+NOTE: This document is currently under revision. The guiding principles were updated, but are yet to be discussed with the whole league. The long-term goals are still in the process of being revised and will be updated in the future.
+
 == Guiding Principles
 
-This section contains an overview of the general guiding principles of the RoboCup Small Size League (SSL). Each principle has its own section describing the goal and its motivation. Any changes in this section should be informed to and discussed with the whole league.
+This section contains an overview of the guiding principles of the
+RoboCup Small Size League (SSL). Each principle has its own section
+describing the intention and its motivation. The SSL has broadly
+categorized goals into two focus areas, community and technical.
 
-=== Human Interpretability
+Any changes in this section should be informed to and discussed with the
+whole league (committees and teams).
 
-In order for the public to understand the progress of AI and robotics, it is important to demonstrate it on interpretable tasks and systems. Soccer is a game understood and played around the world making it an ideal task. As we develop the rules, AI, robots and other systems in RoboCup SSL, we keep the game understandable by the general public.
+=== Building Community
 
-We want for any spectator to be able to understand the game at any point, without having previous context. In other words, anyone who arrives at any match at any point, should easily be able to determine:
+Providing goals to build community fundamentally acknowledges that
+people, both inside and outside of the SSL, are the bedrock of technical
+advancement and growth. Our community building principles are focused on
+broadening participation within the league, enhancing the experience of
+new members, and strengthening our relationships to other RoboCup
+leagues.
 
-* Which team is which
-* Which team is winning
-* What is the phase of the game (first half, half time, second half, etc.)
+==== Interesting Gameplay
 
-=== Interesting Gameplay
+The original idea of playing soccer with robots was to have a platform
+for research that is well known to the public, so that progress in
+research can more easily be seen by everyone and people will get
+motivated to join us on the field. Getting and keeping attention by the
+public is only possible if the games are exciting and easily
+understandable. Interesting gameplay supports community and funding
+engagement.
 
-The original idea of playing soccer with robots was to have a platform for research that is well known to the public, so that progress in research can more easily be seen by everyone and people will get motivated to join us within the field. Getting and keeping attention by the public is only possible, if the games are exciting and easily understandable. Additionally,
+In order for the public to understand the progress of AI and robotics,
+it is important to demonstrate it on interpretable tasks and systems.
+Soccer is a game understood and played around the world making it an
+ideal task. As we develop the rules, AI, robots and other systems in
+RoboCup SSL, we keep the game understandable by the general public.
 
-the organisation and some teams depend on funding from sponsors. If the games do not entertain, or show the desired progress, this funding can get lost.
+We want for any spectator to be able to understand the game at any
+point, without having previous context. In other words, anyone who
+arrives at any match at any point, should easily be able to determine:
 
-=== Robustness to Real World Uncertainty
+* Which team is which?
+* Which team is winning?
+* What are the basic rules?
+* What is the phase and state of the game?
 
-The world is messy and full of uncertainty. Between partial observability, noise in sensors and actuation, and modeling errors it is important that our robots and AI are robust to this messiness.
+==== Ease of Entry
 
-=== Striving for full autonomy
+In order to build a strong community and ensure a constant flow of fresh
+ideas, new teams must have a clear path to participation and resources
+to support early efforts. Additionally, the overall effort to join for
+the first time and be competitive must be approachable within the
+timeline of a bachelor or graduate degree program. Ease of entry is
+improved by identifying problem areas, and providing community standards
+either in implementation or documentation for important subsystems,
+particularly systems that are important to rules compliant gameplay.
 
-One of the big objectives of the RoboCup Organization is to be able to have autonomous games and therefore, we want to reduce the human interference as much as possible, so as to truly be autonomous. Therefore, we aim for a fully autonomous team of robots and fully autonomous matches between two independent teams without any human interaction, including no human referee.
+==== Educational Relevance
 
-=== Encourage scientific discourse
+A key aspect of RoboCup, and the SSL, is providing a fun and relevant
+educational experience to students and members of the community. The SSL
+should enable participants to problem solve in an environment where
+acceptable solutions are uncomplicated and optimal solutions are not
+obvious or not always possible to find. Strong technical principles and
+technical organization (such as software engineering) should be needed
+to find success at competition. Not to be overlooked, the development of
+"soft-skills" adjacent to engineering such as project management,
+budgeting, and leadership is also important.
 
-One of the main objectives of the RoboCup Organization is to “promote robotics and AI research, by offering a publicly appealing, but formidable challenge”. It is important to keep in mind not just the challenge part, but the promotion of research done by teams in the SSL. In order to do so, teams in the SSL must be open to changes that encourage new AI and robotics research, and teams must also work to engage with each other, RoboCup at large, and the wider research community. New challenges may require significant work from teams in the league, but have the potential to improve robotics and AI both inside and outside the context of RoboCup. Additionally, teams should strive to publish and share their techniques and research both within the SSL but also to RoboCup as a whole and the wider AI and robotics communities.
+==== Scientific Discourse
+
+One of the main objectives of the RoboCup Organization is to “promote
+robotics and AI research, by offering a publicly appealing, but
+formidable challenge”. The SSL supports a robust scientific discourse by
+leveraging the aspects that make the SSL unique:
+
+* Our ability to compare AI strategies with different programming
+hierarchies and diverse centralized and decentralized architectures
+* The league deploys AI on real, non-standardized, non-trivial,
+multi-agent robot hardware
+* De-emphasis on perception, localization, and human robot locomotion
+
+By leveraging these strengths, we are more equipped to produce
+researchers, students, and workers with real experience in contemporary
+topics in robotics and AI. The SSL has the ability to compare approaches
+that are unique to us, but also to help evaluate approaches from the MSL
+and the SPL that have narrower constraints, fewer agents, or less
+dynamicism. Defining our strengths and engaging with others in the
+community keeps the SSL focused in a complex field. The individual SSL
+teams and league as a whole should strive to publish and share their
+discoveries within the SSL but also to RoboCup as a whole and the wider
+AI and robotics communities.
+
+==== Open Source
+
+The SSL encourages all participants to open source parts or all of their
+solutions, as well as to collaborate on league and broader open source
+projects. Many SSL teams, including top performing Division-A teams open
+source their full platform at least annually. This encourages
+collaboration and progress across participants.
+
+=== Advancing Technical Progress
+
+The league seeks to advance technical progress across many robotics
+disciplines.
+
+==== Effective AI Progress
+
+Effective AI progress means improving software techniques to perform
+winning strategies. It also requires sound engineering so that AI can
+adapt to unforeseen situations. Lastly, AI behaviour should be
+explainable. Artificial Intelligence in the SSL includes classical and
+machine learning approaches in isolation or working together. AI can be
+applied to, but is not limited to, the sub-components control, path
+planning, game state evaluation, prediction, and decision making at all
+levels. The league is committed to effective AI progress for a variety
+of reasons:
+
+* There is an overwhelming student, research, and professional desire to
+develop robotics AI knowledge in dynamic multi-agent environments
+* Multi-agent robotics is a challenging and ongoing open
+research/engineering problem that serves RoboCup and the SSL as a
+complex problem space worthy of exploration and technical advancement
+* Technical progress in this area makes our gameplay more interesting,
+and the overall appeal of the competition higher for participants and
+spectators
+
+The SSL is a hardware-enabled multi-agent AI focused league. The SSL
+maintains this emphasis through key structural elements of the game:
+
+* The removal of localization and mapping tasks from the game through
+global vision (teams aren't studying perception)
+* The permission of wheeled holonomic locomotion rather than bipedal
+locomotion (teams aren't studying humanoid movement)
+* The relatively high agent count and high dynamicism (teams are
+studying many agents adversarially interacting in a fast environment)
+* Real, complex, non-standard hardware (teams can explore hardware
+advantage in the context of AI)
+
+A key aspect of the SSL commitment to effective AI progress is to fully
+utilize the flexibility provided by our competition structure to explore
+the realm of possible technical solutions within the previously
+established areas of interest. The SSL will commit to building an
+environment that supports effective AI progress by:
+
+* Maintaining flexibility to support a wide variety of approaches to AI
+architecture
+** classical AI
+** machine/reinforcement learning (black-box)
+** centralized
+** decentralized
+** hybrid
+** other novel solutions
+* Considering and supporting contemporary trends and the desires of
+industry, academia, and students
+
+==== Quantifying Complex Results
+
+Having a high agent count coupled with highly dynamic gameplay presents
+challenges in quantifying why one team performs better than another.
+This is because world assessment computational complexity grows
+exponentially and the time given to assess the state and make a decision
+is also reduced in a dynamic environment. The SSL strives to develop
+methods to quantify decision making and performance in these
+environments. Sound mathematical analysis of results assists in
+communication and sharing of ideas.
+
+==== Robustness to Real World Uncertainty
+
+The world is messy and full of uncertainty. Between partial
+observability, noise in sensors and actuation, and modeling errors it is
+important that our robots and AI are robust to this messiness. The SSL
+focuses on uncertainty as it relates to multi-agent behavior and sensor
+fusion; perception uncertainty is strategically reduced through accurate
+global vision. Robust technical approaches are more adaptable to others’
+environments.
+
+==== Striving for full autonomy
+
+One of the big objectives of the RoboCup Organization is to be able to
+have autonomous games and therefore, we want to reduce human
+interference as much as possible, so as to truly be autonomous.
+Therefore, we aim for a fully autonomous team of robots and fully
+autonomous matches between two independent teams without any human
+interaction, including no human referee.
+
 
 == Long Term Goals
 
