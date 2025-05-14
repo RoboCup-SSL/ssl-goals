@@ -30,6 +30,7 @@ jobs:
       - run: |
           mkdir /tmp/out
           mv ./*.html ./*.pdf /tmp/out/
+          cp -r ./pages/* /tmp/out/
           git checkout gh-pages
           rm -rf * .asciidoctor
           mv /tmp/out/* .
